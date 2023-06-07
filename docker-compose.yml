@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+    stress:
+        build: ./docker
+        tty: true
+        command: stress-ng -c 1 -l 50
